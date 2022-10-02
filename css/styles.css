@@ -2,7 +2,8 @@
     --color-primary :#757575;
     --color-secondary: #212121;
     --color-accent: #2196F3;
-    --color-white: #fffff;
+    --color-white: #ffffff;
+    --color-black: #000000;
     --color-background: #ffffff;
     --color-background-hero: #2F303A;
     --color-background-work: #F5F5F5;
@@ -16,19 +17,17 @@ font-family: 'Roboto', sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.7;
+letter-spacing: 0.03em;
 }
 
 .logo {
-color: #000;
+color: var(--color-black);
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;   
 line-height: 1.2;
-letter-spacing: 0.03em;
 text-decoration: none;
-
 }
-
 .logo-accent {
 color: var(--color-accent)
 }
@@ -49,7 +48,7 @@ color: var(--color-accent);
 }
 
 /* не спрацьовує current */
-.site-nav .link .current { 
+.site-nav-link .current { 
  color: var(--color-accent);
 }
 
@@ -65,7 +64,7 @@ color: var(--color-accent);
 /* section-hero */
 
 .hero {
-    background-color: #2F303A;
+    background-color:var(--color-background-hero);
 }
 .hero-title {
     font-weight: 900;
@@ -73,11 +72,11 @@ color: var(--color-accent);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-white);
 }
-/* focus,hover, */
+
 .primary-button {
-    color: #ffffff;
+    color: var(--color-white);
     background-color: var(--color-accent);
     font-family: inherit;
     font-weight: 700;
@@ -91,41 +90,39 @@ color: var(--color-accent);
  background-color: #188CE8;
 }
 
-/* section */
+/* sections */
+
+.features {
+    background-color: var(--color-background-work);
+}
 .section-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
     color: var(--color-secondary);
 }
-.section .features {
-    background-color: var(--color-background-work);
-}
+
 .feature-list .title {
     font-weight: 700;
     line-height: 1.15;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-secondary);
 }
-.section .work {
+.work {
     background-color: var(--color-background-work);
 }
-.section .team {
+.team {
     background-color: var(--color-background-team);
 }
 .team-list .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.8;
-    letter-spacing: 0.03em;
     color: var(--color-secondary);
 }
 .team-list .profession {
     font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+    line-height: 1.2;
     color: var(--color-primary);
 }
 /* portfolio */
@@ -146,14 +143,14 @@ color: var(--color-accent);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
+    letter-spacing: inherit;
     color: var(--color-secondary);
-   background-color: var(--color-background-team);
-   cursor: pointer;
+    background-color: var(--color-background-team);
+    cursor: pointer;
 }
 .buttons:hover,
 .buttons:focus {
-    color: #ffffff;
+    color: var(--color-white);
     background-color: var(--color-accent);
 }
 .portfolio-list .title {
@@ -165,11 +162,10 @@ color: var(--color-accent);
 }
 .portfolio-list .project {
     font-size: 16px;
-    line-height: 1,88;
-    letter-spacing: 0.03em;
+    line-height: 1.88;
     color: var(--color-primary);
 }
-.section .portfolio {
+.portfolio {
     background-color: var(--color-background-work);
 }
 /* footer */
@@ -177,15 +173,24 @@ color: var(--color-accent);
     background-color: var(--color-background-hero);
 }
 .logo-foo {
-color: #ffffff;
+color: var(--color-white);
 }
+.contacts-foo .address {
+    font-style:normal;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
 .contacts-foo .contacts {
+    font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
-.contacts-foo .contacts {
-    
+.contacts-foo .contacts:hover,
+.contacts-foo .contacts:focus {
+    color: var(--color-accent);
 }
 
 
