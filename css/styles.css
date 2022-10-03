@@ -15,8 +15,6 @@ color: var(--color-primary);
 background-color: var(--color-background);
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
-font-weight: 400;
-line-height: 1.7;
 letter-spacing: 0.03em;
 }
 
@@ -54,6 +52,8 @@ color: var(--color-accent);
 .contacts .link {
     color: var(--color-primary);
     font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
 .contacts .link:hover,
@@ -80,7 +80,7 @@ color: var(--color-accent);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
@@ -103,7 +103,8 @@ color: var(--color-accent);
 
 .feature-list .title {
     font-weight: 700;
-    line-height: 1.15;
+    font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--color-secondary);
 }
@@ -116,7 +117,7 @@ color: var(--color-accent);
 .team-list .title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.2;
     color: var(--color-secondary);
 }
 .team-list .profession {
@@ -177,13 +178,13 @@ color: var(--color-white);
 .contacts-foo .address {
     font-style:normal;
     color: var(--color-white);
+    line-height: 1.7;
     text-decoration: none;
 }
 
 .contacts-foo .contacts {
     font-style: normal;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
